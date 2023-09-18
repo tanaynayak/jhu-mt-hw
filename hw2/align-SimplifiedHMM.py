@@ -11,7 +11,7 @@ optparser.add_option("-d", "--data", dest="train", default="data/hansards", help
 optparser.add_option("-e", "--english", dest="english", default="e", help="Suffix of English filename (default=e)")
 optparser.add_option("-f", "--french", dest="french", default="f", help="Suffix of French filename (default=f)")
 optparser.add_option("-t", "--iterations", dest="iterations", default=5, type="int", help="Number of iterations (default=5)")
-optparser.add_option("-n", "--num_sentences", dest="num_sents", default=10, type="int", help="Number of sentences to use for training and alignment")
+optparser.add_option("-n", "--num_sentences", dest="num_sents", default=100000, type="int", help="Number of sentences to use for training and alignment")
 (opts, _) = optparser.parse_args()
 
 f_data = "%s.%s" % (opts.train, opts.french)
