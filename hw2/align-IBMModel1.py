@@ -20,7 +20,7 @@ sys.stderr.write("Training with IBM Model 1")
 trans_prob = defaultdict(lambda: defaultdict(lambda: 1.0))
 
 # Iteratively refine alignment probabilities using Expectation-Maximization
-for iteration in range(5):  # Consider more iterations for better results
+for iteration in range(10):  # Consider more iterations for better results
     count_fe = defaultdict(float)
     total_f = defaultdict(float)
 
